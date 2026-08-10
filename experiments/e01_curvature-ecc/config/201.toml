@@ -1,0 +1,7 @@
+input = "../data/201.poly"
+results_dir = "../results"
+output_name = "201"
+skip_degenerate = true
+surface_plots = false
+histogram_bins = 30
+plot_percentile = 99.99

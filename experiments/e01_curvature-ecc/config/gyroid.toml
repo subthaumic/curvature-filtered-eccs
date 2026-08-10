@@ -1,0 +1,7 @@
+input = "../data/gyroid.poly"
+results_dir = "../results"
+output_name = "gyroid"
+skip_degenerate = true
+surface_plots = false
+histogram_bins = 30
+plot_percentile = 99.99

@@ -27,6 +27,7 @@ dependencies = [
   "scipy>=1.14.1",
   "scikit-learn>=1.5.2",
   "matplotlib>=3.9.2",
+  "libigl>=2.6.2",
 ]
 
 [dependency-groups]

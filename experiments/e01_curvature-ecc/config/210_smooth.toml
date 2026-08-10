@@ -1,0 +1,8 @@
+input = "../data/210_smooth.poly"
+results_dir = "../results"
+output_name = "210_smooth"
+skip_degenerate = true
+surface_plots = false
+histogram_bins = 30
+plot_percentile = 99.99
+z_min = -180

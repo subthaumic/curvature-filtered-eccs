@@ -1,0 +1,16 @@
+experiment_id: e02
+experiment_name: parametric-mesh-ecc
+
+inputs:
+  - name: parametric_surface_config
+    description: TOML parameters for the manuscript parametrized surfaces and mesh levels.
+    location: experiments/e02_parametric-mesh-ecc/config/parametric_surfaces.toml
+    checksum: null
+
+outputs:
+  - name: generated_meshes
+    description: Generated .poly meshes with triangle-averaged configured curvature in the alpha slot.
+    location: experiments/e02_parametric-mesh-ecc/data/
+  - name: generated_ecc_results
+    description: Content-addressed curvature and vertex lower-star ECC calculations, exported diagnostics and summaries, shared surface renderings, and signature-cached consolidated figures.
+    location: experiments/e02_parametric-mesh-ecc/results/

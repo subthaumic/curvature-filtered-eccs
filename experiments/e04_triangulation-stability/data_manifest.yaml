@@ -1,0 +1,21 @@
+experiment_id: e04
+experiment_name: projected-subdivision-stability
+
+inputs:
+  - name: e02_parametric_surface_config
+    description: Shared surfaces, analytic curvatures and smooth ECC references.
+    location: experiments/e02_parametric-mesh-ecc/config/parametric_surfaces.toml
+
+outputs:
+  - name: subdivision_results
+    description: Errors to theory and convergence summaries over projected edge-midpoint subdivisions.
+    location: experiments/e04_triangulation-stability/results/subdivision_summary.csv
+  - name: triangulation_results
+    description: Pairwise variability in quality-controlled and thin-triangle stress ensembles.
+    location: experiments/e04_triangulation-stability/results/triangulation_summary.csv
+  - name: figures
+    description: Signature-cached convergence, variability, ECC-jump and mesh-quality figures.
+    location: experiments/e04_triangulation-stability/results/
+  - name: calculation_cache
+    description: Content-addressed per-realisation calculations.
+    location: experiments/e04_triangulation-stability/results/calculation_cache/

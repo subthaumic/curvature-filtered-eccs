@@ -1,0 +1,5 @@
+source_config = "../../e02_parametric-mesh-ecc/config/parametric_surfaces.toml"
+results_dir = "../results"
+sample_count = 1001
+interval_padding_fraction = 0.05
+constant_interval_padding = 1.0

@@ -1,0 +1,36 @@
+experiment_id: e01
+experiment_name: curvature-ecc
+
+inputs:
+  - name: curvature_export_archive
+    description: Canonical local curvature export used by the e01 ECC configs
+    location: experiments/e01_curvature-ecc/data/curvature_export.zip
+    checksum: sha256:e62a77788a0214a0d1551982adce3d064376a08656e6c4755d81247f366b825a
+  - name: curvature_export_extracted
+    description: Extracted POLYS-format datasets with curvature values in the alpha slot
+    location: experiments/e01_curvature-ecc/data/
+    checksum: null
+    files:
+      - name: 199.poly
+        checksum: sha256:a1cf6c75fc719280f08b7d10a95216dffedd9bbb96d694941dfbc40460ca087d
+      - name: 199_smooth.poly
+        checksum: sha256:e9c1f76d69b8d4e3a4b6dcdbfc847acf7cc6f634c874258d57f25f5d0c08558e
+      - name: 201.poly
+        checksum: sha256:273cc65f42f4c948ba570e012c1493c3fe1a3ff55809346e13d5c0667280f606
+      - name: 201_smooth.poly
+        checksum: sha256:4d1de916ab44979c2332102def654d994f53a3a50d351467cde9f83740181610
+      - name: 210.poly
+        checksum: sha256:52d64da6b91c28ec403bf7346fa24d95f612b21f9df84ea9c65bcecf2bf965c9
+      - name: 210_smooth.poly
+        checksum: sha256:f630c5546142268eb4ac1d80d137e40a5a3e88bd0a00fec861267483aa2196a3
+      - name: gyroid.poly
+        checksum: sha256:e12835ec3184f1ae08d2567f619e39c6ef48d3ac67b1547b09630490d5a248d9
+  - name: model_archive
+    description: Print-ready STL and full-resolution OBJ ZIP exports; not used by current ECC scripts
+    location: experiments/e01_curvature-ecc/data/3D models.zip
+    checksum: sha256:a5d4b7cfc7a317bd204c6bca1a8801e1bf0df761f32eedfb391f54ffac22fb95
+
+outputs:
+  - name: curvature_export_outputs
+    description: ECC outputs generated from the extracted curvature export
+    location: experiments/e01_curvature-ecc/results/

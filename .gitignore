@@ -9,8 +9,13 @@ experiments/e??_*/runs/**
 !experiments/e??_*/results/
 !experiments/e??_*/runs/
 !experiments/e??_*/data/.gitkeep
+!experiments/e??_*/data/test*.poly
 !experiments/e??_*/results/.gitkeep
 !experiments/e??_*/runs/.gitkeep
+
+# Generated smoke-run caches
+experiments/e??_*/smoke_results/calculation_cache/
+experiments/e??_*/smoke_results/*.cache.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
