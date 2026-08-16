@@ -1,0 +1,33 @@
+experiment_id: e05
+experiment_name: vertex-perturbation-stability
+
+inputs:
+  - name: e02_parametric_surface_config
+    description: Shared surfaces, analytic curvatures, mesh generators, and smooth ECC references.
+    location: experiments/e02_parametric-mesh-ecc/config/parametric_surfaces.toml
+  - name: smoke_config
+    description: Three-level retained run with four repetitions at five evenly spaced coordinate-noise scales.
+    location: experiments/e05_vertex-perturbation-stability/config/smoke.toml
+  - name: full_config
+    description: Four-level run with twelve repetitions at five evenly spaced coordinate-noise scales.
+    location: experiments/e05_vertex-perturbation-stability/config/vertex_perturbation_stability.toml
+
+outputs:
+  - name: perturbation_realizations
+    description: Per-realization displacement, curvature, ECC, SECC, and mesh-quality measurements.
+    location: experiments/e05_vertex-perturbation-stability/results/perturbation_realizations.csv
+  - name: perturbation_summary
+    description: Medians and interquartile ranges over coordinate perturbations.
+    location: experiments/e05_vertex-perturbation-stability/results/perturbation_summary.csv
+  - name: perturbation_pairwise
+    description: Pairwise curvature, ECC, and SECC distances within repeated perturbation conditions.
+    location: experiments/e05_vertex-perturbation-stability/results/perturbation_pairwise.csv
+  - name: perturbation_pairwise_summary
+    description: Pairwise variability summaries by surface, curvature, mesh level, and noise scale.
+    location: experiments/e05_vertex-perturbation-stability/results/perturbation_pairwise_summary.csv
+  - name: figures
+    description: Direct ECC overlays, baseline stability, reference error, pairwise variability, displacement, mesh-quality, and ECC-jump figures.
+    location: experiments/e05_vertex-perturbation-stability/results/
+  - name: calculation_cache
+    description: Content-addressed per-realization arrays and metadata.
+    location: experiments/e05_vertex-perturbation-stability/results/calculation_cache/

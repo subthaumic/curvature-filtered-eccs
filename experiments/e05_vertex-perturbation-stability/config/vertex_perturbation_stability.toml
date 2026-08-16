@@ -1,0 +1,36 @@
+source_config = "../../e02_parametric-mesh-ecc/config/parametric_surfaces.toml"
+results_dir = "../results"
+subdivision_levels = 4
+repetitions = 12
+random_seed = 20260816
+noise_model = "centered_standardized_gaussian_coordinates"
+scale_reference = "unperturbed_median_edge_length"
+perturbation_scales = [0.0001, 0.001325, 0.00255, 0.003775, 0.005]
+sample_count = 1001
+interval_padding_fraction = 0.05
+constant_interval_padding = 1.0
+
+[[base_meshes]]
+surface = "doubly_elliptic_torus"
+u_segments = 8
+v_segments = 8
+
+[[base_meshes]]
+surface = "ellipsoid"
+u_segments = 8
+v_segments = 8
+
+[[base_meshes]]
+surface = "product_sine_graph"
+u_segments = 8
+v_segments = 8
+
+[[base_meshes]]
+surface = "helicoid_patch"
+u_segments = 8
+v_segments = 8
+
+[[base_meshes]]
+surface = "pseudosphere_patch"
+u_segments = 8
+v_segments = 8
